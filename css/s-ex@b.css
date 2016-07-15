@@ -1,0 +1,370 @@
+body {
+  background: url(../images/xv.png);
+  background-color: #563444;
+  overflow-y: hidden;
+}
+
+@font-face {
+  font-family: "scriptina-regular";
+  src: url(../fonts/scriptina.regular.ttf);
+}
+
+@font-face {
+  font-family: "brandon-text-medium";
+  src: url(../fonts/brandon-text/brandon-text-medium.otf);
+}
+
+.logo {
+  float:left;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+
+
+p.ticker {
+  font-family: "scriptina-regular";
+  cursor: default;
+  margin-top: -31px;
+  margin-left: 50px;
+  z-index: 0;
+  position: fixed;
+  font-weight: 800;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.9);
+/*  font-size: 12px;
+  margin-top: -20px;
+  margin-left: 60px;*/
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'brandon-text-medium', 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+}
+
+ul.topnav li.right {
+  float: right;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+ul.topnav li.right:hover {
+    border-bottom: 3px solid white;
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+    opacity: 1;
+}
+
+ul.topnav li.left {
+  font-weight: 800;
+  font-size: 22px;
+  position: absolute;
+  z-index: 10;
+  font-family: 'Open Sans';
+  opacity: 0.8;
+}
+
+ul.topnav li.left:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+.document-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 90%; /*90%*/
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  border-top: 1px solid black;
+  border-bottom: 55px solid white;
+/*  border-bottom: 0px solid #4F8699;*/
+  /*background: url(../images/asfalt-dark.png);*/
+  background-color: white;
+  -moz-box-shadow: 0 0 35px rgba(236,236,236,0.55);
+  -webkit-box-shadow: 0 0 35px rgba(236,236,236,0.55);
+  box-shadow: 0 0 35px rgba(236,236,236,0.55);
+
+}
+
+.text {
+  overflow: hidden;
+/*  text-overflow: ellipsis;*/
+  display: -webkit-box;
+  line-height: 21px;
+  max-height: 98%;      /* fallback */
+  /*-webkit-line-clamp: 30;*/ /* number of lines to show  /*kevin commented this out because idk why it's there */
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-box-orient: vertical;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.place-holder {
+  color: transparent;
+  border: transparent;
+  padding: 0;
+  height: 610px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+
+.document-item {
+  color: black;
+  /*border: 5px solid #1BB0CE;*/
+  
+  /*background: url(../images/asfalt-dark.png);*/
+  background-color: white;
+  padding: 0;
+  margin-top:48px;
+  height: 800px;
+  width: 600px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: bottom;
+  word-wrap: break-word;
+  white-space: normal;
+
+  position: relative;
+
+  border: 2px solid rgba(0,0,0,0.5);
+
+  -moz-box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+/*  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.6);*/
+  cursor: pointer;
+
+/*  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;*/
+}
+
+img.close-button {
+  position: absolute;
+  margin-left: 46%;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 5%;
+  opacity: 0.1;
+}
+
+img.close-button:hover {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.document-item:after {
+  content: '';
+  position: absolute;
+  top: -900px;
+  left: -900px;
+  right: -900px;
+  bottom: -900px;
+  background: white;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/*.document-item:after:hover {
+  background-color: white;
+}*/
+
+
+.document-item:hover {
+/*  -moz-box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);*/
+  background-color: white;
+  color: black;
+  border-color: #682860;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.document-item:hover h2 {
+  color: #682860;
+}
+
+.list-inline {
+  white-space: nowrap;
+}
+
+
+
+@media screen and (max-width: 1680px) {
+  .document-item {
+    height: 700px;
+  }
+}
+
+
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+
+
+#logo-holder {
+  position:relative; 
+  font-family: 'brandon-text-medium';
+  color: rgba(0,0,0,0.5);
+}
+
+#logo-holder .image, #logo-holder .text {
+  transition: opacity 0.2s ease-in-out;
+}
+
+#logo-holder .image {
+  position: relative; 
+  opacity: 0;
+}
+
+#logo-holder .text {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  opacity:1;
+  padding-right: 10px;
+}
+
+#logo-holder:hover .image {
+  opacity: 1;
+}
+
+#logo-holder:hover .text {
+  opacity: 0;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: right;
+}
+
+.enlarged-card {
+  margin: auto;
+  position: fixed;
+  max-width: 700px;
+  width: 100%; /*90vw*/
+  height: 100%; /*90vh*/
+  top: 0; left: 0; bottom: 0; right: 0;
+  cursor: auto;
+  background-color: white;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  background: white;
+  z-index: 99999;
+}
+
+.enlarged-card-text {
+  margin-top: 1.3%;
+  overflow: scroll;
+  overflow-x: hidden;
+  cursor: auto;
+  color: black;
+  z-index: 99999;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+/*    border-radius: 10px;*/
+    /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,1);*/
+    background-color: rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+/*    border-radius: 10px;*/
+    background-color: black;
+    /*-webkit-box-shadow: inset 0 0 50px rgba(0,0,0,1); */
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background-color: gray;
+}
+/*.scrollbar {
+  margin: 0 0 1em 0;
+  height: 2px;
+  background: #ccc;
+  line-height: 0;
+}
+
+.scrollbar .handle {
+  width: 100px;
+  height: 100%;
+  background: #292a33;
+  cursor: pointer;
+}
+
+.scrollbar .handle .mousearea {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}*/
+
+body.about {
+  overflow-y: visible;
+}
