@@ -192,10 +192,10 @@ img.close-button {
 }
 
 img.close-button:hover {
-  position: absolute;
+/*  position: absolute;
   bottom: 0;
   opacity: 1;
-  cursor: pointer;
+*/  cursor: ew-resize;
 }
 
 .document-item:after {
@@ -228,6 +228,10 @@ img.close-button:hover {
 
 .document-item:hover h2 {
   color: #682860;
+}
+
+.document-item:hover img.close-button {
+  opacity: 1;
 }
 
 .list-inline {
