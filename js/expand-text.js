@@ -48,6 +48,4 @@ $('.document-item:after').click(function(e) {
 
 // Open all links in each document-item in a new tab
 $(".document-item a[href^='http://']").attr("target","_blank");
-
-
-
+$(".document-item a[href^='https://']").attr("target","_blank")

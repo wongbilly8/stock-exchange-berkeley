@@ -3,6 +3,18 @@ body.index {
   overflow-y: hidden;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin-left: 20px;
+}
 
 @font-face {
   font-family: "scriptina-regular";
@@ -36,7 +48,7 @@ body.index {
 
 @font-face {
   font-family: "missionscript";
-  src: url(../fonts/missionscript/mission-script.otf);
+  src: url(../fonts/MissionScript/Mission-Script.otf);
 }
 
 @font-face {
@@ -230,10 +242,10 @@ h3.second {
   /*background: url(../images/asfalt-dark.png);*/
   background-color: white;
   padding: 0;
-  margin-top:48px;
+  margin-top: 48px;
   height: 800px;
   width: 600px;
-  margin-right: 15px;
+  margin-right: 25px;
   display: inline-block;
   vertical-align: bottom;
   word-wrap: break-word;
@@ -330,11 +342,11 @@ img.close-button:hover {
 
 
 
-@media screen and (max-width: 1680px) {
+/*@media screen and (max-width: 1680px) {
   .document-item {
     height: 700px;
   }
-}
+}*/
 
 
 
