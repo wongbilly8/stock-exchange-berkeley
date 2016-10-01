@@ -202,10 +202,6 @@ h3.first {
   margin-bottom: -10px;
 }
 
-/*h3.first:hover, h3.second:hover {
-  color: #682860;
-}*/
-
 h3.second {
   font-size: 18px;
   margin-bottom: 77px;
@@ -220,7 +216,6 @@ h3.second {
   /*color: transparent;*/
   border: transparent;
   padding: 0;
-  height: 800px;
   width: 400px;
   display: inline-block;
   vertical-align: bottom;
@@ -243,7 +238,6 @@ h3.second {
   background-color: white;
   padding: 0;
   margin-top: 48px;
-  height: 800px;
   width: 600px;
   margin-right: 25px;
   display: inline-block;
@@ -264,6 +258,10 @@ h3.second {
 
 /*  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;*/
+}
+
+.document-item, .place-holder {
+  height: 800px;
 }
 
 img.close-button {
@@ -339,16 +337,6 @@ img.close-button:hover {
 .list-inline {
   white-space: nowrap;
 }
-
-
-
-/*@media screen and (max-width: 1680px) {
-  .document-item {
-    height: 700px;
-  }
-}*/
-
-
 
 * {
 	margin: 0;
@@ -638,4 +626,74 @@ p.boxed-text3 {
 .btn-lg:hover  {
   background-color: #CC3299;
   border: 1px solid #CC3299;
+}
+
+
+@media screen and (max-width: 1680px) {
+  .document-item, .place-holder {
+    height: 700px;
+  }
+  .document-item {
+    width: 600px;
+  }
+  .place-holder {
+    width: 400px;
+  }
+  h3.first {
+    font-size: 26px;
+    margin-bottom: -10px;
+  }
+  h3.second {
+    font-size: 16px;
+    margin-bottom: 65px;
+  }
+  .enlarged-card {
+    height: 100%; /*90vh*/
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .document-item, .place-holder {
+    height: 580px;
+  }
+  .document-item {
+    width: 550px;
+  }
+  .place-holder {
+    width: 350px;
+  }
+  h3.first {
+    font-size: 22px;
+    margin-bottom: -10px;
+  }
+  h3.second {
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+  .enlarged-card {
+    height: 100%; /*90vh*/
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .document-item, .place-holder {
+    height: 460px;
+  }
+  .document-item {
+    width: 500px;
+  }
+  .place-holder {
+    width: 300px;
+  }
+  h3.first {
+    font-size: 22px;
+    margin-bottom: -10px;
+  }
+  h3.second {
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+  .enlarged-card {
+    height: 100%; /*90vh*/
+  }
 }
