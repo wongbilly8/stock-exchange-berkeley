@@ -700,7 +700,7 @@ p.boxed-text3 {
 }*/
 
 
-@media screen and (max-height: 1080px) {
+@media screen and (max-height: 1040px) {
   .document-item, .place-holder {
     height: 700px;
   }
@@ -724,7 +724,7 @@ p.boxed-text3 {
 }
 
 
-@media screen and (max-height: 900) {
+@media screen and (max-height: 900px) {
   .document-item, .place-holder {
     height: 580px;
   }
